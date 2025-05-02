@@ -18,7 +18,10 @@
     <header>
         <h1>Subir</h1>
         <div class="contenido">
-            
+            <form action="subir.php" method="POST" enctype="multipart/form-data">
+                <input type="file" accept=".png, .jpg, .jpeg" name="archivo">
+                <input type="submit" value="Subir">
+             </form>
         </div>
     </header>
 </body>
