@@ -1,46 +1,37 @@
 <?php
-    $dir = "../galeria/";
-    $archivo = $_FILES["archivo"];
-    move_uploaded_file($archivo["tmp_name"], $dir . $archivo["name"]);
-    chdir("../galeria/");
-    if (file_exists('1.jpg')){
-        $A = true; 
+    $creado = false;
+    $renombrado = "";
+    for ($i=1;$i<=4;$i++){
+        if (file_exists("../galeria/" . strval($i) . ".jpg") == false)
+        {
+           $renombrado = strval($i) . ".jpg";
+           $creado = true;
+           break;
+        }
     }
-    else{
-        $A = false;
-    }
-    if (file_exists('2.jpg')){
-        $B = true; 
-    }
-    else{
-        $B = false;
-    }
-    if (file_exists('3.jpg')){
-        $C = true; 
-    }
-    else{
-        $C = false;
-    }
-    if (file_exists('4.jpg')){
-        $D = true; 
-    }
-    else{
-        $D = false;
-    }
+    if ($creado == true){
+        $dir = "../galeria/";
+        $archivo = $_FILES["archivo"];
+        $info = pathinfo($archivo["name"]);
 
-    if ($A == false){
-        rename($archivo["name"], '1.jpg');
-    }
-    else if ($B == false){
-        rename($archivo["name"], '2.jpg');
-    }
-    else if ($C == false){
-        rename($archivo["name"], '3.jpg');
-    }
-    else if ($D == false){
-        rename($archivo["name"], '4.jpg');
+        $nombregenerado = strval(rand(0, 100000000000)) . ".jpg";
+
+        if ($info["extension"] == "png"){
+            $imagen = imagecreatefrompng($archivo["tmp_name"]);
+            $nuevaimg = imagescale($imagen, 400, 200);
+            $nuevaimg = imagejpeg($nuevaimg, $nombregenerado);
+        }
+        else{
+            $imagen = imagecreatefromjpeg($archivo["tmp_name"]);
+            $nuevaimg = imagescale($imagen, 400, 200);
+            $nuevaimg = imagejpeg($nuevaimg, $nombregenerado);
+        }
+
+        rename($nombregenerado, $dir . $renombrado);
+        echo "Imagen subida con éxito.";
     }
     else{
-        echo "Todo ocupado.";
+        echo "Todos los slots están ocupados.<br>Contacta a un administrador para que limpie la galería.";
     }
+    // chdir("../galeria/");
 ?>
