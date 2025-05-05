@@ -63,6 +63,10 @@ header h1{
     color: rgb(49, 48, 48);
 }
 
+#h1-adelante{
+    margin-top: 1em;
+}
+
 .contenido{
     margin-top: 2em;
     margin-left: 10em;
@@ -116,4 +120,22 @@ header h1{
     display: block;
     margin: auto;
     padding: 0 20px;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.formulario-input{
+    width: 100%;
+}
+
+.ok{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
