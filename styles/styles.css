@@ -83,11 +83,16 @@ header h1{
 .contenido-bloque{
     position: relative;
     display: block;
-}
-
-.contenido-bloque{
     width: 400px;
     height: 200px;
+}
+
+.contenido-bloque img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .contenido-bloque p{
