@@ -10,7 +10,7 @@ Es mi primer proyecto usando PHP, por el momento no contiene ningún login.
 - Subida de imágenes jpg, jpeg y png
 - Conversión de png a jpg
 - Ajuste de resolución de imágenes a 400x200
-- Sección de limpieza de imágenes con usuario y contraseña ("Admin panel")
+- Sección de limpieza de imágenes solo para administradores (Cuenta con un array de usuarios y contraseñas) (No es por BD)
 
 ## Lenguajes de programación usados
 - HTML5
