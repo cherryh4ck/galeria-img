@@ -5,7 +5,7 @@ Pequeño proyecto de una página web que simula ser una galería de imágenes ut
 
 Es mi primer proyecto usando PHP, por el momento no contiene ningún login.
 
-Una versión sin limitaciones puede ser encontrada acá: (Galería Extendida)[https://github.com/hddtomas/galeria-img-extendida]
+Una versión sin limitaciones puede ser encontrada acá: [Galería Extendida](https://github.com/hddtomas/galeria-img-extendida)
 
 ## Contenidos
 - Sección de imágenes (Por el momento limitada)
