@@ -1,11 +1,9 @@
 # Galería de Imágenes
 
 ## Descripción
-Pequeño proyecto de una página web que simula ser una galería de imágenes utilizando el lenguaje de programación PHP.
+Pequeño mini proyecto de una página web que simula ser una galería de imágenes, todo usando HTML, CSS y PHP. 
 
-Es mi primer proyecto usando PHP, por el momento no contiene ningún login.
-
-Una versión sin limitaciones puede ser encontrada acá: [Galería Extendida](https://github.com/hddtomas/galeria-img-extendida)
+Este fue el primer paso para llegar a una idea final, Tachibana: (Repositorio)[https://github.com/cherryh4ck/tachibana]
 
 ## Contenidos
 - Sección de imágenes (Por el momento limitada)
