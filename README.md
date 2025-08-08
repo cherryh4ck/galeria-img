@@ -3,7 +3,7 @@
 ## Descripción
 Pequeño mini proyecto de una página web que simula ser una galería de imágenes, todo usando HTML, CSS y PHP. 
 
-Este fue el primer paso para llegar a una idea final, Tachibana: (Repositorio)[https://github.com/cherryh4ck/tachibana]
+Este fue el primer paso para llegar a una idea final, Tachibana: [Repositorio](https://github.com/cherryh4ck/tachibana)
 
 ## Contenidos
 - Sección de imágenes (Por el momento limitada)
